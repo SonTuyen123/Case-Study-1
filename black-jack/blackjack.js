@@ -86,23 +86,7 @@ function stay() {
     youSum = reduceAce(youSum, youAceCount);
     canHit = false;
     document.getElementById("hidden").src = "./cards/" + hidden + ".png";
-    let message = "";
-    if (youSum > 21) {
-        message = "You Lose !";
-    } else if (dealerSum > 21) {
-        message = "You win !";
-    }
-    //both you and dealer <= 21
-    else if (youSum == dealerSum) {
-        message = "Tie !";
-    } else if (youSum > dealerSum) {
-        message = "You Win !";
-    } else if (youSum < dealerSum) {
-        message = "You Lose !";
-    }
-    document.getElementById("dealer-sum").innerText = dealerSum;
-    document.getElementById("your-sum").innerText = youSum;
-    document.getElementById("results").innerText = message;
+    checkWin();
 }
 //tính ra giá trị quân bài
 function getValue(card) {
@@ -131,4 +115,23 @@ function reduceAce(playerSum, playerAceCount) {
         playerAceCount -= 1;
     }
     return playerSum;
+}
+function checkWin() {
+    let message = "";
+    if (youSum > 21) {
+        message = "You Lose !";
+    } else if (dealerSum > 21) {
+        message = "You win !";
+    }
+    //both you and dealer <= 21
+    else if (youSum == dealerSum) {
+        message = "Tie !";
+    } else if (youSum > dealerSum) {
+        message = "You Win !";
+    } else if (youSum < dealerSum) {
+        message = "You Lose !";
+    }
+    document.getElementById("dealer-sum").innerText = dealerSum;
+    document.getElementById("your-sum").innerText = youSum;
+    document.getElementById("results").innerText = message;
 }

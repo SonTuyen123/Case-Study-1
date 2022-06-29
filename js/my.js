@@ -1,7 +1,7 @@
 let users = localStorage.getItem('players') ? JSON.parse(localStorage.getItem('players')) : [];
 
 function showListUser() {
-   let data = `<tr>
+    let data = `<tr>
             <th>ID</th>
             <th>Name</th>
             <th>Email</th>
@@ -23,8 +23,9 @@ function showListUser() {
     document.getElementById('body-table').innerHTML = data;
 
 }
+
 function deleteList(index) {
-     users = localStorage.getItem('players') ? JSON.parse(localStorage.getItem('players')) : [];
+    users = localStorage.getItem('players') ? JSON.parse(localStorage.getItem('players')) : [];
     if (confirm("Are you sure you want to delete ?")) {
         users.splice(index, 1);
     }
@@ -32,10 +33,10 @@ function deleteList(index) {
     localStorage.setItem('players', JSON.stringify(users))
     showListUser();
 }
+
 showListUser();
 
-
-function edit(index){
+function edit(index) {
     let userEdit = users[index];
 
     document.getElementById('first-name').value = userEdit.name;
@@ -49,12 +50,10 @@ function edit(index){
 
 }
 
-function closeModal(){
+function closeModal() {
     let modelEdit = document.getElementById('contact-modal');
     modelEdit.style.display = "none";
 }
-
-
 function update() {
     let index = document.getElementById('id').value;
     let name = document.getElementById('first-name').value;
@@ -67,13 +66,9 @@ function update() {
     userEdit.email = email;
 
     console.log(users)
-
-
-
     localStorage.setItem('players', JSON.stringify(users))
 
     closeModal();
     showListUser()
 }
-// })
 
