@@ -15,7 +15,7 @@ function dang_ky() {
     LoadingUser(player)
     alert('registration is successful')
     clearInputInRegister()
-    window.location.href = "/Case/login.html";
+    window.location.href = "../views/Login.html";
 }
 
 function LoadingUser(player) {

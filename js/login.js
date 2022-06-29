@@ -4,14 +4,14 @@ function login() {
     let players = loadData();
     let loginStatus = false;
     if (username === "tuyen@gmail.com" && password === "admin") {
-        window.location.href = "/Case/list.html";
+        window.location.href = "../index.html";
         clearInput();
         return;
     }
     for (const player of players) {
         if (player.email === username && player.password === password) {
             alert("Login successful!")
-            window.location.href = "/Case/black-jack/index.html";
+            window.location.href = "../black-jack/index.html";
             loginStatus = true
             clearInput()
             break;

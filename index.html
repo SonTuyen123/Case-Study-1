@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/list.css">
+</head>
+<body>
+<div class="container">
+    <h1>Black Jack</h1>
+</div>
+<br>
+<table id="body-table">
+</table>
+
+<div id="contact-modal" class="modal" style="display: none">
+    <div id="modal-content">
+        <div id="modal-header">
+            <span class="close-modal" id="close-modal" onclick="closeModal()">&times;</span>
+            <h2>Sign Up</h2>
+        </div>
+        <div id="modal-body">
+                <div class="form-group">
+                    <label for=first-name> First Name</label>
+                    <input type="text" id="first-name" placeholder="Enter your first name">
+                </div>
+                <div class="form-group">
+                    <label for=last-name> Last Name</label>
+                    <input type="text" id="last-name" placeholder="Enter your last name">
+                </div>
+                <div class="form-group">
+                    <label for=email> Email</label>
+                    <input type="text" id="email" placeholder="Enter your email name">
+                </div>
+                <div class="form-group">
+                    <input type="text" id="id" hidden>
+                </div>
+                <input type="submit" value="Update" onclick="update()">
+        </div>
+        <div id="modal-footer">
+            <h3>Code Gym</h3>
+        </div>
+    </div>
+</div>
+
+</body>
+<script src="js/my.js"></script>
+</html>
