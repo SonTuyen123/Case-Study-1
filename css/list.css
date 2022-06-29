@@ -69,7 +69,7 @@ body{
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 }
 #modal-header{
-    background:#4586de;
+    background: #e37d60;
     color:#fff;
     padding: 25px 30px;
     text-align: center;
@@ -85,7 +85,7 @@ body{
     cursor: pointer;
 }
 #modal-footer{
-    background:#4586de;
+    background: #e37d60;
     color:#fff;
     padding: 25px 30px;
     text-align: center;
@@ -96,7 +96,7 @@ body{
     padding: 25px 30px;
 }
 #modal-body h3{
-    color: #4586de;
+    color: #e37d60;
     text-transform: uppercase;
     fort-size:35px;
     text-align: center;
@@ -126,7 +126,7 @@ input[type="submit"]{
     margin-left: 12.5%;
     transition: background 0.3s;
     color: #fff;
-    background-color: #4586de;
+    background-color: #0e57c0;
     border-radius: 10px;
     cursor:pointer;
     text-transform: uppercase;
