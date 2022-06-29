@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    <style>
+        .box {
+            margin: 200px;
+        }
+        .login {
+            color: aqua;
+        }
+        #mydiv {
+            background-image: url("https://lh3.googleusercontent.com/looCh_KiDwKl_bR8ztn2lP1vZXxKAiMzshkitoOXARy1QkK07OZ3eANOX4IWVlGVTcU=w512");
+            animation: mymove 5s backwards;
+        }
+        @keyframes mymove {
+            from {
+                background-image: url("https://lh3.googleusercontent.com/looCh_KiDwKl_bR8ztn2lP1vZXxKAiMzshkitoOXARy1QkK07OZ3eANOX4IWVlGVTcU=w512")
+            }
+            to {
+                background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQMmV7qZYKzhWvGQZjyPViDQU9pfgyb9QhdViF7p84SfrqZnNztHQjngQolrXj-lK6K3w&usqp=CAU");
+            }
+        }
+    </style>
+</head>
+<body class="" id="mydiv">
+<section>
+    <div class="box d-flex justify-content-center">
+        <div class="p-3 mb-2 bg-secondary text-white  ">
+            <h2 class="login">LOGIN </h2>
+            <div class="inputBx">
+                <input type="text" id="username" class="f-input" required="required">
+                <span>User name</span>
+                <br>
+                <label class="f-label" for="username"></label>
+                <span style="color: red" id="email-Alert"></span>
+            </div>
+            <div class="inputBx password">
+                <input id="password" type="password" name="password" class="f-input" required="required">
+                <span>Password</span>
+                <a href="#" class="password-control" onclick="return show_hide_password(this);"></a>
+            </div>
+            <div class="inputBx"><br>
+                <button type="button" onclick="login()" id="btnSignup" class="btn btn-primary">Log in</button>
+            </div>
+            <p>Forgot password? <a
+                    href="https://www.dienmayxanh.com/kinh-nghiem-hay/5-cach-tim-lai-mat-khau-wifi-trong-nha-khi-quen-cu-1228589"
+                    style="color: #223fff">Click Here</a></p>
+            <p>Don't have an account <a href="/Case/Register.html" style="color: #f6eb17">Sign up</a></p>
+        </div>
+    </div>
+</section>
+<script src="Login.js"></script>
+<script src="Register_js.js"></script>
+</body>
+</html>

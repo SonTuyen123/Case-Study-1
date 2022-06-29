@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    <style>
+        .box{
+            margin: 179px;
+
+        }
+        .login{
+            color: aqua;
+        }
+    </style>
+</head>
+<body  background="img/da.jpg">
+<section>
+    <div class="box d-flex justify-content-center">
+        <div class="bg-success p-2 text-white bg-opacity-100">
+            <div class="f">
+                <h2 style="color: coral">Sign Up </h2>
+                <div class="inputBx">
+                    <input type="text" id="firstName-signup" class="f-input" required="required">
+                    <span>First Name</span>
+                    <div class="error-message"></div>
+                </div><br>
+                <div class="inputBx">
+                    <input type="text" id="lastname-signup" class="f-input" required="required">
+                    <span>Last Name</span>
+                    <div class="error-message"></div>
+                </div><br>
+                <div class="inputBx">
+                    <input type="text" id="email-signup" class="f-input" required="required">
+                    <span>Email</span>
+                    <div class="error-message"></div>
+                </div><br>
+                <div class="inputBx password">
+                    <input id="password-signup" type="password" class="f-input" name="password" required="required">
+                    <span>Password</span>
+                    <a href="#" class="password-signup" onclick="return show_hide_password(this);"></a>
+                    <div class="error-message"></div>
+                </div><br>
+                <div class="inputBx">
+                    <button type="button" onclick="dang_ky()" id="btnSignup" class="btn btn-info">Sign Up</button>
+                </div><br>
+                <p>Forgot password? <a href="#" style="color: blue">Click Here</a></p>
+                <p>Don't have an account <a href="/Case/Login.html" style="color: blue">Login</a></p>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+<script src="Register_js.js"></script>
+</html>

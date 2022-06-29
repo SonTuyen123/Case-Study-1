@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Jack</title>
+    <link rel="stylesheet" href="blackjack.css">
+    <style>
+    body{
+       background-image: url("https://cdn5.vectorstock.com/i/1000x1000/68/69/casino-poker-background-red-colors-seamless-vector-5846869.jpg");
+    }
+    h2,.card{
+        color: white;
+    }
+
+    </style>
+</head>
+<body>
+<h2>Dealer: <span id="dealer-sum"></span></h2>
+<div id="dealer-cards" class="card">
+    <img id="hidden" src="./cards/BACK.png">
+</div>
+
+<h2>You: <span id="your-sum"></span></h2>
+<div id="your-cards" class="card"></div>
+
+<br>
+<button id="hit" class="btn-hit">HIT</button>
+<button id="stay" class="btn-hit">STAY</button>
+<p id="results" class="card"></p>
+</body>
+<script src="blackjack.js"></script>
+</html>
